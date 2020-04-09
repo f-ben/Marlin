@@ -1,3 +1,24 @@
+# Bens Marlin Firmware for Ender 3 (pro) with SKR E3 mini v1.2
+
+Marlin with the following enabled features:
+- BLTouch
+- S-Curve Acceleration
+- SD Card Support
+- StealthChop
+- Hybrid Threshold
+- 512k enabled
+- Buzzer disabled
+
+If you want to disable BLTouch you have to open configuration.h and comment out the line 891
+
+     #define BLTOUCH
+  
+If you want to use BLTouch you have to open configuration.h and adjust the offsets in line 963
+
+     #define NOZZLE_TO_PROBE_OFFSET { x, y, z }
+
+The original idea of this combination of features came from this reddit thread by morningreis: https://www.reddit.com/r/ender3/comments/dojh3v/guide_for_those_upgrading_to_an_skr_e3_mini_v12/
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)

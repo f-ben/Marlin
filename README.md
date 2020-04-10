@@ -11,6 +11,7 @@ Marlin with the following enabled features:
 - 512k enabled
 - Buzzer disabled
 - Babystepping enabled
+- LCD Bad leveling
 
 If you want to use BLTouch you have to open configuration.h and adjust the offsets in line 963
 
@@ -19,7 +20,8 @@ If you want to use BLTouch you have to open configuration.h and adjust the offse
 If you want to disable BLTouch you have to:
 - Open file configuration.h and comment out line 891 `//#define BLTOUCH`
 - Open file configuration.h and comment out line 1211 `//#define AUTO_BED_LEVELING_BILINEAR`
-- Open file configuration_adv.h and comment out line 1471 `//#define BABYSTEPPING`
+- Open file configuration.h and comment out line 1318 `//#define LCD_BED_LEVELING`
+- Open file configuration**_adv**.h and comment out line 1471 `//#define BABYSTEPPING`
 
 ### If you dont want to compile yourself
 

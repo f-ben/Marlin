@@ -10,18 +10,24 @@ Marlin with the following enabled features:
 - Hybrid Threshold
 - 512k enabled
 - Buzzer disabled
+- Babystepping enabled
 
-If you want to disable BLTouch you have to open configuration.h and comment out the line 891
-
-     #define BLTOUCH
-  
 If you want to use BLTouch you have to open configuration.h and adjust the offsets in line 963
 
-     #define NOZZLE_TO_PROBE_OFFSET { x, y, z }
+- `#define NOZZLE_TO_PROBE_OFFSET { x, y, z }`
+     
+If you want to disable BLTouch you have to:
+- Open file configuration.h and comment out line 891 `//#define BLTOUCH`
+- Open file configuration.h and comment out line 1211 `//#define AUTO_BED_LEVELING_BILINEAR`
+- Open file configuration_adv.h and comment out line 1471 `//#define BABYSTEPPING`
+
+### If you dont want to compile yourself
+
+There is a precompiled "firmware.bin" file in the "precompiled" folder. This includes all the features expect BLTouch.
 
 ### What to do after flashing the firmware
 
-You will definitely have to set your extruder steps (e-steps) and the hot end calibration (pid). 3D-Nation wrote an awesome article how to do that. You can check it out here: https://3dnation504795197.wordpress.com/guide/ - you are looking for the first howto (Over-Extrusion) and the second one (PIDs autotune).
+You will definitely have to set your extruder steps (e-steps) and the hot end calibration (pid). 3D-Nation wrote an awesome article how to do that. You can check it out here: https://3dnation504795197.wordpress.com/guide/ - you are looking for the first howto's (Over-Extrusion) and the second one (PIDs autotune).
 
 ### The original idea...
 ...of this combination of features came from this reddit thread by morningreis: https://www.reddit.com/r/ender3/comments/dojh3v/guide_for_those_upgrading_to_an_skr_e3_mini_v12/

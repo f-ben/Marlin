@@ -21,7 +21,7 @@ If you want to disable BLTouch you have to:
 - Open file configuration.h and comment out line 891 `//#define BLTOUCH`
 - Open file configuration.h and comment out line 1211 `//#define AUTO_BED_LEVELING_BILINEAR`
 - Open file configuration.h and comment out line 1318 `//#define LCD_BED_LEVELING`
-- Open file configuration**_adv**.h and comment out line 1471 `//#define BABYSTEPPING`
+- Open file configuration_adv.h and comment out line 1471 `//#define BABYSTEPPING`
 
 ### If you dont want to compile yourself
 

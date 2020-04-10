@@ -31,6 +31,8 @@ There is a precompiled "firmware.bin" file in the "precompiled" folder. This inc
 
 You will definitely have to set your extruder steps (e-steps) and the hot end calibration (pid). 3D-Nation wrote an awesome article how to do that. You can check it out here: https://3dnation504795197.wordpress.com/guide/ - you are looking for the first howto's (Over-Extrusion) and the second one (PIDs autotune).
 
+Also there are custom gcodes in the "gcodes" folder to use with your slicer software before and after each print.
+
 ### The original idea...
 ...of this combination of features came from this reddit thread by morningreis: https://www.reddit.com/r/ender3/comments/dojh3v/guide_for_those_upgrading_to_an_skr_e3_mini_v12/
 

@@ -13,7 +13,7 @@ Marlin with the following enabled features:
 - Babystepping enabled
 - LCD Bed leveling
 
-If you want to use BLTouch you have to open configuration.h and adjust the offsets in line 963
+If you want to use BLTouch you have to open configuration.h and adjust the X and Y offsets in line 963 (You do not need to edit the Z-Value because you can set this later in the printer itself by using the "Configuration -> Probe Z-Offset" menu).
 
 - `#define NOZZLE_TO_PROBE_OFFSET { x, y, z }`
      
@@ -30,6 +30,8 @@ There is a precompiled "firmware.bin" file in the "precompiled" folder. This inc
 ### What to do after flashing the firmware
 
 You will definitely have to set your extruder steps (e-steps) and the hot end calibration (pid). 3D-Nation wrote an awesome article how to do that. You can check it out here: https://3dnation504795197.wordpress.com/guide/ - you are looking for the first howto's (Over-Extrusion) and the second one (PIDs autotune).
+
+If you are using a BLTouch and you did not edit the Z-Value in the sourcecode you also have to set this value using the LCD-Display on the printer. Go to the "Configuration -> Probe Z-Offset" value and adjust the value by hand. Here is how I do it: https://www.reddit.com/r/ender3/comments/fz94vj/just_got_my_octoprint_this_morning_is_this/fn3xd16/
 
 Also there are custom gcodes in the "gcodes" folder to use with your slicer software before and after each print.
 

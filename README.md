@@ -33,7 +33,7 @@ You will definitely have to set your extruder steps (e-steps) and the hot end ca
 
 If you are using a BLTouch and you did not edit the Z-Value in the sourcecode you also have to set this value using the LCD-Display on the printer. Go to the "Configuration -> Probe Z-Offset" value and adjust the value by hand. Here is how I do it: https://www.reddit.com/r/ender3/comments/fz94vj/just_got_my_octoprint_this_morning_is_this/fn3xd16/
 
-Also there are custom gcodes in the "gcodes" folder to use with your slicer software before and after each print.
+#### Also there are custom gcodes in the "gcodes" folder to use with your slicer software before and after each print and on top of all that you can find my Cura-Profiles in the cura_profiles folder.
 
 ### The original idea...
 ...of this combination of features came from this reddit thread by morningreis: https://www.reddit.com/r/ender3/comments/dojh3v/guide_for_those_upgrading_to_an_skr_e3_mini_v12/
